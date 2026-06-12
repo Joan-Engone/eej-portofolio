@@ -34,6 +34,14 @@ const projects: Project[] = [
   websiteHref: "#",
   secondaryLabel: "View Source",
   secondaryHref: "#"
+},
+{
+  title: "Website Gym",
+  description: "A modern web application for a gym enterprise.",
+  image: "/projects/gym.jpg",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
 }
 ];
 
