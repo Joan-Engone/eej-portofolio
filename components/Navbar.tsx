@@ -14,17 +14,17 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll("section[id], header[id]");
-      let current = "";
+      const sections = document.querySelectorAll("section[id]");
+      let current = "about";
 
       sections.forEach((section) => {
         const sectionTop = (section as HTMLElement).offsetTop;
-        if (window.scrollY >= sectionTop - 100) {
-          current = section.getAttribute("id") ?? "";
+        if (window.scrollY >= sectionTop - 120) {   // Increased offset for better feel
+          current = section.getAttribute("id") ?? "about";
         }
       });
 
-      if (current) setActiveSection(current);
+      setActiveSection(current);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -34,6 +34,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md shadow-[4px_4px_10px_rgba(0,0,0,0.05),-4px_-4px_10px_rgba(255,255,255,0.8)]">
       <div className="flex justify-between items-center max-w-container-max mx-auto px-gutter py-4">
+        
         {/* Logo */}
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">
@@ -53,13 +54,21 @@ export default function Navbar() {
               <a
                 key={href}
                 href={href}
-                className={`font-label-caps text-label-caps transition-colors duration-300 ${
-                  isActive
-                    ? "text-primary font-bold border-b-2 border-primary"
-                    : "text-secondary font-medium hover:text-primary"
-                }`}
+                className="relative font-label-caps text-label-caps transition-colors duration-300 group"
               >
-                {label}
+                <span
+                  className={`${
+                    isActive ? "text-primary" : "text-secondary hover:text-primary"
+                  }`}
+                >
+                  {label}
+                </span>
+
+                {/* Smooth Underline */}
+                <span
+                  className={`absolute bottom-[-2px] left-0 h-[2px] bg-primary transition-all duration-300 
+                    ${isActive ? "w-full" : "w-0 group-hover:w-full"}`}
+                />
               </a>
             );
           })}

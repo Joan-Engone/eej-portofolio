@@ -11,32 +11,30 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Enterprise CRM Solution",
-    description:
-      "Built with Next.js, Prisma, and PostgreSQL, this CRM helps businesses manage client relationships with real-time analytics.",
-    image: "https://lh3.googleusercontent.com/aida-public/AL6-d3n1D9YyU7P9",
-    websiteHref: "#",
-    secondaryLabel: "View Source",
-    secondaryHref: "#",
-  },
+  title: "Global Concept",
+  description:
+    "Built to support digital marketing and brand communication, this platform enables businesses to promote their services, publish content, and engage customers effectively online.",
+  image: "/projects/global-concepts-p.jpg",
+  websiteHref: "https://global-concept-joan-engones-projects.vercel.app/",
+  secondaryLabel: "View Source",
+  secondaryHref: "#",
+},
   {
-    title: "Health & Wellness App",
-    description:
-      "A cross-platform Flutter application for tracking fitness metrics and personalized nutrition plans.",
-    image: "https://lh3.googleusercontent.com/aida-public/AL6-d3m2P7XwU8Q0",
-    websiteHref: "#",
-    secondaryLabel: "Case Study",
-    secondaryHref: "#",
-  },
+  title: "Agneghe Beach Hotel",
+  description: "A modern web application for Agneghe Beach Hotel, featuring room reservations, guest management, online booking, restaurant ordering, and real-time room availability.",
+  image: "/projects/agneghe.jpg",
+  websiteHref: "https://agneghe.vercel.app",
+  secondaryLabel: "Case Study",
+  secondaryHref: "#"
+},
   {
-    title: "Fintech Desktop Terminal",
-    description:
-      "High-performance Java desktop application for institutional stock trading and market data analysis.",
-    image: "https://lh3.googleusercontent.com/aida-public/AL6-d3l3O6YvV9R1",
-    websiteHref: "#",
-    secondaryLabel: "View Source",
-    secondaryHref: "#",
-  },
+  title: "Radiant HR Management System",
+  description: "High-performance Java desktop application for comprehensive human resource management, including employee records, payroll, recruitment, performance tracking, and organizational analytics.",
+  image: "/projects/radiant.jpg",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
+}
 ];
 
 export default function Projects() {
@@ -64,18 +62,20 @@ export default function Projects() {
             }) => (
               <div
                 key={title}
-                className="neomorph-card rounded-3xl overflow-hidden flex flex-col"
+                className="neomorph-card rounded-3xl overflow-hidden flex flex-col group"
               >
-                <div className="p-4 flex flex-col flex-1">
+                <div className="relative overflow-hidden">
                   <Image
                     src={image}
                     alt={title}
                     width={400}
                     height={225}
-                    className="w-full aspect-video object-cover rounded-2xl mb-6"
-                    unoptimized
+                    className="w-full aspect-video object-cover transition-transform duration-500 group-hover:scale-105"
+                    unoptimized={image.startsWith("http")} // Only unoptimized for external URLs
                   />
+                </div>
 
+                <div className="p-4 flex flex-col flex-1">
                   <h4 className="font-title-sm text-title-sm mb-2 px-2">
                     {title}
                   </h4>

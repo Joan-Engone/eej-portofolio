@@ -42,12 +42,12 @@ export default function Experience() {
                       <p className="text-primary font-medium">Radiant Insurance Company</p>
                     </div>
                     <span className="bg-surface-container px-3 py-1 rounded-full text-xs font-bold text-on-surface-variant whitespace-nowrap">
-                      SEPT 2025 - PRESENT
+                      SEPT 2025 - JAN 2026
                     </span>
                   </div>
                   <p className="text-secondary text-body-base">
-                    Driving innovation through the development of internal tools and
-                    client-facing insurance portals using Spring Boot and Oracle DB.
+                    Driving innovation through the development of HR Management System with
+                    different portals using Next js, Typescript, Javascript, prisma and Postgresql.
                   </p>
                 </div>
               </div>

@@ -1,8 +1,8 @@
 const footerLinks = [
-  { label: "LinkedIn", href: "#" },
-  { label: "GitHub", href: "#" },
-  { label: "Twitter", href: "#" },
-  { label: "Email", href: "#" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/engone-edouard-joan-107291228" },
+  { label: "GitHub", href: "https://github.com/Joan-Engone" },
+  { label: "Twitter", href: "https://twitter.com/engoneedouardjoan" },
+  { label: "Email", href: "mailto:engonej2@gmail.com" },
 ];
 
 export default function Footer() {
