@@ -42,6 +42,15 @@ const projects: Project[] = [
   websiteHref: "#",
   secondaryLabel: "View Source",
   secondaryHref: "#"
+},
+
+{
+  title: "Symptra App",
+  description: "An android application for a gym enterprise.",
+  image: "/projects/symptra.jpg",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
 }
 ];
 
