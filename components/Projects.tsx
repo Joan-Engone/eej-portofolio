@@ -45,6 +45,42 @@ const projects: Project[] = [
 },
 
 {
+  title: "AutoZone – Automotive Marketplace",
+  description: "A modern automotive marketplace that connects buyers and sellers, allowing users to browse vehicle listings, explore car details, and manage vehicle sales through a seamless online experience.",
+  image: "/projects/autozone.png",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
+},
+
+{
+  title: "Kolivo – Delivery & E-commerce Platform",
+  description: "A modern web platform for a delivery and e-commerce business, connecting customers with products and providing reliable motorcycle courier services.",
+  image: "/projects/kolivo.png",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
+},
+
+{
+  title: "Second-Hand Phone Sales & Repair",
+  description: "A modern web application for a phone repair and resale company, showcasing refurbished smartphones, repair services, and affordable second-hand devices.",
+  image: "/projects/retrade.png",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
+},
+
+{
+  title: "Driving School Website",
+  description: "A modern web application for a driving school enterprise.",
+  image: "/projects/rostand.png",
+  websiteHref: "#",
+  secondaryLabel: "View Source",
+  secondaryHref: "#"
+},
+
+{
   title: "Symptra App",
   description: "An android application for a gym enterprise.",
   image: "/projects/symptra.jpg",

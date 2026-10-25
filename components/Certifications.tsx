@@ -16,7 +16,7 @@ const certifications: Certification[] = [
     issuer: "UDEMY",
     title: "Software Architecture & Design of Modern Large Scale Systems",
     description: "Mastering design patterns, microservices, and enterprise scalability principles for modern high-load systems.",
-    certificateImage: "/certificates/udemy-software-architecture.jpg",   // ← Add your image path
+    certificateImage: "/certificates/udemy-software-architecture.jpg",
   },
  {
   icon: "code",
@@ -25,7 +25,6 @@ const certifications: Certification[] = [
   description: "Built modern React applications and integrated AI tools into development workflows.",
   certificateImage: "/certificates/ReactCertificate.jpg",
 },
-
   {
     icon: "computer",
     issuer: "CISCO",
