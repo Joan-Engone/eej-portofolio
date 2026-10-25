@@ -6,6 +6,12 @@ interface Service {
 
 const services: Service[] = [
   {
+    icon: "palette",
+    title: "UI/UX Design",
+    description:
+      "Designing intuitive, user-centered interfaces for web and mobile, from user research, wireframes and design systems to high-fidelity mockups and interactive prototypes.",
+  },
+  {
     icon: "smartphone",
     title: "Mobile Development",
     description:

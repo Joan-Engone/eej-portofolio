@@ -74,10 +74,17 @@ export default function Navbar() {
           })}
         </div>
 
-        {/* CTA Button */}
-        <button className="bg-inverse-surface text-white px-6 py-2.5 rounded-lg font-label-caps text-label-caps font-bold hover:bg-primary transition-all duration-300 active:scale-95 shadow-lg">
-          Let&apos;s Talk
-        </button>
+        
+{/* WhatsApp CTA Button */}
+<a
+  href="https://wa.me/250789399610?text=Hello%20Joan%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-inverse-surface text-white px-6 py-2.5 rounded-lg font-label-caps text-label-caps font-bold hover:bg-primary transition-all duration-300 active:scale-95 shadow-lg inline-block"
+>
+  Let&apos;s Talk
+</a>
+
       </div>
     </nav>
   );
